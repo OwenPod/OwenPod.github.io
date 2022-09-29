@@ -88,8 +88,14 @@ h2 {
     color: #4C5760;
 }
 
-@media screen and (max-width:600px) {
-    .column {
-      width: 100%; 
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+    .music {
+        width: 100%;
+        float: none;
+        
     }
 }
