@@ -103,4 +103,44 @@ h2 {
 .projectGrid {
     display: grid;
     margin: 5%;
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.project {
+    background-color:#93A8AC;
+    width: 21%;
+    float: left;
+    padding: 15px;
+    border: 5px #161513;
+    margin: 1%;
+}
+
+.projectImg {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-bottom: 0%;
+}
+
+.projectTitle {
+    color:#161513; 
+    font-size: 24px;
+    margin-top: 0%;
+    margin-left: 2.5%;
+    margin-bottom: 0%;
+}
+
+.projectDesc {
+    margin-top: 5px;
+    margin-left: 2.5%;
+    margin-bottom: 0%;
+    color: #1b1f22;
+    font-weight: bold;
+}
+
+.projectTech {
+    margin-top: 5px; 
+    margin-left: 2.5%;
+    color: #1b1f22;
 }
