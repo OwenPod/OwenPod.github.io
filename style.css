@@ -99,3 +99,8 @@ h2 {
         float: none;
     }
 }
+
+.projectGrid {
+    display: grid;
+    margin: 5%;
+}
