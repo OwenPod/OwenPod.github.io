@@ -1,19 +1,26 @@
 * {
     box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    border-radius: 25px;
 }
+
+:root {
+    --blue: #39a2db;
+    --dark: #073944;
+    --soft: #d5d9dc;
+    --white: #eff4f7;
+  }
 
 body {
     margin: auto;
     /* display: flex; */
     /* flex-direction: column; */
-    font-family: Arial, Helvetica, sans-serif;
-    background-color:#4C5760;
+    background-color: var(--soft);
 }
 
 h1 {
-    color:RGB(147, 168, 172); 
+    color:var(--dark); 
     font-size:300%; 
-    font-family:serif; 
     margin-top: 0%;
     margin-bottom:10px;
 }
@@ -21,7 +28,7 @@ h1 {
 h2 {
     margin-top:0px; 
     line-height: 28px; 
-    color:#A59E8C;
+    color:var(--blue);
 }
 
 .section {
@@ -46,8 +53,7 @@ h2 {
     writing-mode: tb-rl; 
     padding-top: 20px;
     padding-right: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #333;
+    color: var(--dark);
     font-size: 27px;
     font-style: italic;
     font-weight: bold;
@@ -119,12 +125,13 @@ h2 {
 
 .topnav {
     overflow: hidden;
-    background-color: #333;
+    background-color: var(--blue);
+    border-radius: 0%;
 }
 
 .topnav a {
     float: left;
-    color: #93A8AC;
+    color: var(--dark);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -132,13 +139,22 @@ h2 {
 }
 
 .topnav a:hover {
-    background-color: #93A8AC;
-    color: #4C5760;
+    background-color: var(--soft);
+    color: var(--dark);
 }
 
 .topnav a.active {
-    background-color: #D7CEB2;
-    color: #4C5760;
+    background-color: var(--dark);
+    color: var(--white);
+}
+
+.coverPhoto {
+    width:91%; 
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: var(--dark);
+    float: right; 
+    margin-top:20px;
 }
 
 @media only screen and (max-width: 1123px) {
@@ -165,19 +181,29 @@ h2 {
 }
 
 .projectGrid {
-    display: grid;
-    margin: 5%;
+    display: flex;
+    margin: 9%;
+    margin-top: 0;
     content: "";
+    flex-wrap: wrap;
     clear: both;
-    display: table;
 }
 
 .project {
-    background-color:#93A8AC;
+    background-color:var(--blue);
     width: 21%;
     float: left;
     padding: 15px;
-    border: 5px #161513;
+    border: 5px var(--dark);
+    margin: 1%;
+}
+
+.projectHighlight {
+    background-color:var(--blue);
+    width: 31%;
+    float: left;
+    padding: 15px;
+    border: 5px var(--dark);
     margin: 1%;
 }
 
@@ -188,7 +214,7 @@ h2 {
 }
 
 .projectTitle {
-    color:#161513; 
+    color:var(--soft); 
     font-size: 24px;
     margin-top: 0%;
     margin-left: 2.5%;
@@ -199,12 +225,16 @@ h2 {
     margin-top: 5px;
     margin-left: 2.5%;
     margin-bottom: 0%;
-    color: #1b1f22;
+    color: var(--soft);
     font-weight: bold;
 }
 
 .projectTech {
     margin-top: 5px; 
     margin-left: 2.5%;
-    color: #1b1f22;
+    color: var(--soft);
+}
+
+#skills {
+    background-color: var(--white);
 }
