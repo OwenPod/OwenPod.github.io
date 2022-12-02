@@ -196,6 +196,7 @@ h2 {
     padding: 15px;
     border: 5px var(--dark);
     margin: 1%;
+    position: relative;
 }
 
 .projectHighlight {
@@ -205,6 +206,7 @@ h2 {
     padding: 15px;
     border: 5px var(--dark);
     margin: 1%;
+    position: relative;
 }
 
 .projectImg {
@@ -233,6 +235,12 @@ h2 {
     margin-top: 5px; 
     margin-left: 2.5%;
     color: var(--soft);
+}
+
+.project-links {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
 }
 
 #skills {
