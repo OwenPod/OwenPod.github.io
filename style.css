@@ -1,59 +1,42 @@
 * {
     box-sizing: border-box;
-    font-family: Helvetica, sans-serif;
-    border-radius: 25px;
-}
-
-:root {
-    --blue: #39a2db;
-    --dark: #073944;
-    --soft: #d5d9dc;
-    --white: #eff4f7;
   }
 
 body {
     margin: auto;
-    /* display: flex; */
-    /* flex-direction: column; */
-    background-color: var(--soft);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#4C5760;
 }
 
 h1 {
-    color:var(--dark); 
+    color:RGB(147, 168, 172); 
     font-size:300%; 
-    margin-top: 0%;
+    font-family:serif; 
     margin-bottom:10px;
 }
 
 h2 {
     margin-top:0px; 
     line-height: 28px; 
-    color:var(--blue);
+    color:#A59E8C;
 }
 
-.section {
-    margin-top: 5%;
-}
-
-.row {
+.row:after {
     content: "";
-    display: flex;
-    flex-wrap: wrap;
+    display: table;
     clear: both;
 }
 
 .music {
-    /* display: flex;
-    flex-direction: column; */
     position: sticky;
     float: right;
-    max-width: 30%;
+    width: 35%;
     top: 10px;
     right: 10px;
     writing-mode: tb-rl; 
-    padding-top: 20px;
-    padding-right: 20px;
-    color: var(--dark);
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
     font-size: 27px;
     font-style: italic;
     font-weight: bold;
@@ -61,62 +44,20 @@ h2 {
 
 .column {
     float: left;
-    flex: 10%;
-    padding: 0%;
+    width: 50%;
+    padding: 20px;
 }
 
 .column2 {
     float: left;
-    flex: 20%;
-    padding: 0%;
+    width: 15%;
+    padding: 20px;
 }
 
 .column3 {
     float: left;
-    flex: 30%;
-    padding: 0%;
-}
-
-.column4 {
-    float: left;
-    flex: 40%;
-    padding: 0%;
-}
-
-.column5 {
-    float: left;
-    flex: 50%;
-    padding: 0%;
-}
-
-.column6 {
-    float: left;
-    flex: 60%;
-    padding: 0%;
-}
-
-.column7 {
-    float: left;
-    flex: 70%;
-    padding: 0%;
-}
-
-.column8 {
-    float: left;
-    flex: 80%;
-    padding: 0%;
-}
-
-.column9 {
-    float: left;
-    flex: 80%;
-    padding: 0%;
-}
-
-.column10 {
-    float: left;
-    flex: 100%;
-    padding: 0%;
+    width: 35%;
+    padding: 20px;
 }
 
 .content {
@@ -125,13 +66,12 @@ h2 {
 
 .topnav {
     overflow: hidden;
-    background-color: var(--blue);
-    border-radius: 0%;
+    background-color: #333;
 }
 
 .topnav a {
     float: left;
-    color: var(--dark);
+    color: #93A8AC;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -139,107 +79,23 @@ h2 {
 }
 
 .topnav a:hover {
-    background-color: var(--soft);
-    color: var(--dark);
+    background-color: #93A8AC;
+    color: #4C5760;
 }
 
 .topnav a.active {
-    background-color: var(--dark);
-    color: var(--white);
+    background-color: #D7CEB2;
+    color: #4C5760;
 }
 
-.coverPhoto {
-    width:91%; 
-    padding-left: 5%;
-    padding-right: 5%;
-    background-color: var(--dark);
-    float: right; 
-    margin-top:20px;
-}
-
-@media only screen and (max-width: 1123px) {
-    .music {
-        width: 100%;
-        position: static;
-    }
-    .column3 {
-        flex: 100%;
-    }
-    .coverPhoto {
-        height: 0px;
-    }
-}
-
-@media only screen and (max-width: 851px) {
+@media only screen and (max-width: 768px) {
     /* For mobile phones: */
     [class*="col-"] {
-      flex: 100%;
+      width: 100%;
     }
-}
-
-.projectGrid {
-    display: flex;
-    margin: 9%;
-    margin-top: 0;
-    content: "";
-    flex-wrap: wrap;
-    clear: both;
-}
-
-.project {
-    background-color:var(--blue);
-    width: 21%;
-    float: left;
-    padding: 15px;
-    border: 5px var(--dark);
-    margin: 1%;
-    position: relative;
-}
-
-.projectHighlight {
-    background-color:var(--blue);
-    width: 31%;
-    float: left;
-    padding: 15px;
-    border: 5px var(--dark);
-    margin: 1%;
-    position: relative;
-}
-
-.projectImg {
-    width: 95%;
-    margin-left: 2.5%;
-    margin-bottom: 0%;
-}
-
-.projectTitle {
-    color:var(--soft); 
-    font-size: 24px;
-    margin-top: 0%;
-    margin-left: 2.5%;
-    margin-bottom: 0%;
-}
-
-.projectDesc {
-    margin-top: 5px;
-    margin-left: 2.5%;
-    margin-bottom: 0%;
-    color: var(--soft);
-    font-weight: bold;
-}
-
-.projectTech {
-    margin-top: 5px; 
-    margin-left: 2.5%;
-    color: var(--soft);
-}
-
-.project-links {
-    position: absolute;
-    bottom: 5px;
-    right: 5px;
-}
-
-#skills {
-    background-color: var(--white);
+    .music {
+        width: 100%;
+        position: fixed;
+        float: none;
+    }
 }
