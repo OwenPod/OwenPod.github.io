@@ -175,9 +175,6 @@ h2 {
     [class*="col-"] {
       flex: 100%;
     }
-    .row {
-        flex: 100%;
-    }
 }
 
 .projectGrid {
